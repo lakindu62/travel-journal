@@ -140,12 +140,14 @@ body{
 @media(min-width:1000px){
   .locationsContainer{
     grid-template-columns: 1fr 1fr;
-    
-    
   }
 
   .locationContainer{
     flex-direction: column;
+  }
+
+  .locationImage{
+      width: 100%;
   }
 
   
