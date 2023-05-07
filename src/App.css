@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+
+
+*{
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  
+  color: black;
+
+}
+
+h1 , h2 , h3 , h4 ,h5 {
+  margin: 0;
+
+}
+
+
+body{
+  margin: 0;
+}
+
+
+
+
+
+.navbar{
+  background-color:#F55A5A ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  margin-bottom: 4em;
+  
+}
+
+.navHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .navImage{
+
+} */
+
+.navHeaderText{
+  margin-left: 1em;
+  font-weight: normal;
+}
+
+
+
+/*========== JOURNAL ==========*/
+
+.locationsContainer{
+  display: grid;
+  gap: 3em;
+  padding:2em;
+  
+}
+
+
+.locationContainer{
+  display: flex;
+  flex-direction: column;
+ 
+  
+  gap: 1em;
+  align-items: center;
+
+}
+.locationImage{
+  height:300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1em;
+  border: #918E9B 1px solid;
+  
+}
+
+/* .locationInfoContainer{
+ 
+  
+} */
+
+.destinationContainer{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.locationSvg{
+  width: 15px;
+}
+.locationName{
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: .75rem;
+  
+  
+}
+.locationGoogleMapLink{
+  color: #918E9B;
+  font-size: .7em;
+}
+.locationTitle{
+  margin-bottom: .8em;
+  font-size: 2rem;
+}
+
+.locationDateContainer{
+  display: flex;
+}
+.locationStartDate , .locationEndDate{
+  font-weight: bold;
+  font-size: .75rem;
+}
+
+.locationDescription{
+  color: #2B283A;
+  font-size: .7em;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+
+
+
+@media(min-width:600px){
+  .locationContainer{
+    flex-direction: row;
+  }
+
+  .locationImage{
+    width: 200px;
+  }
+}
+
+@media(min-width:1000px){
+  .locationsContainer{
+    grid-template-columns: 1fr 1fr;
+    
+    
+  }
+
+  .locationContainer{
+    flex-direction: column;
+  }
+
+  
+}
+
+@media(min-width:1400px){
+  .locationContainer{
+    flex-direction: row;
+  }
+}
+
+
+
+
+
