@@ -21,7 +21,7 @@ export default function Journal(props){
             <img className='locationImage' src={imageUrl} />
             <div className='locationInfoContainer'>
                 <span className='destinationContainer'>
-                    <img className='locationSvg' src='/src/assets/location.svg' /> 
+                    <img className='locationSvg' src='/location.svg' /> 
                     <h5 className='locationName'>{location}</h5>
                     <a className='locationGoogleMapLink' href={googleMapsUrl}>View on Goolge Maps</a>
                 </span>
